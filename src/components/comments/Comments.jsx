@@ -30,14 +30,14 @@ const Comments = () => {
     return (
         <div className="comments">
             <div className="write">
-                <img src={currentUser.profilePicture} alt="current users profile picture" />
+                <img src={currentUser.profilePicture} alt="current users profile" />
                 <input type="text" placeholder="Write a comment" />
                 <button>Send</button>
 
             </div>
             {comments.map((comment) => (
                 <div className="comment">
-                    <img src={comment.profilePicture} alt="commenters profile picture" />
+                    <img src={comment.profilePicture} alt="commenters profile" />
                     <div className="info">
                         <span>{comment.name}</span>
                         <p>{comment.desc}</p>
